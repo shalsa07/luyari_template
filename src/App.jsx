@@ -1,10 +1,12 @@
 import './App.css'
+import World from './Components/World'
+import WorldUI from './Components/WorldUI/WorldUI'
 
 function App() {
   return (
-    <div className="App">
-        <h1>hello</h1>
-    </div>
+    <>
+      <World />
+    </>
   )
 }
 
