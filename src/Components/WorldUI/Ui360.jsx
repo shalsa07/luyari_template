@@ -91,15 +91,15 @@ export default function Ui360({toggle360,setToggle360,setMapIndexState,mapIndexS
   return (
     <>
         <BtnClose onClick={toggling360}>
-          <ImgContainer src={ui.icons.close}/>
+          <ImgContainer src={ui.icons.popups.close}/>
         </BtnClose>
 
         <ArrowLeft onClick={arrowLeft360}>
-          <ImgContainer src={ui.icons.back}/>
+          <ImgContainer src={ui.icons.popups.back}/>
         </ArrowLeft>
 
         <ArrowRight onClick={arrowRight360}>
-          <ImgContainer src={ui.icons.next}/>
+          <ImgContainer src={ui.icons.popups.next}/>
         </ArrowRight>
     </>
   )

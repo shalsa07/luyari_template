@@ -29,7 +29,7 @@ const RightMenu=styled.div`
     border-radius: 40px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     z-index: 50;
 
@@ -73,34 +73,32 @@ const BottomMenu=styled.div`
 const Btn=styled.div`
     height: 80px;
     width: 40px;
-    padding: 40px 20px 0 20px;
+    margin: 30px 20px 0 20px;
     /* background-color: red; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-content: center;
-    overflow: hidden;   
+    /* overflow: hidden;    */
     cursor: pointer; 
     
     @media screen and (max-width:420px){
         width: 20px;
         height: 40px;
-        padding: 20px 10px 0 10px;
+        margin: 10px 20px 0 20px;
     }
 
             
     @media screen and (max-height:520px){
         width: 20px;
         height: 40px;
-        padding: 20px 10px 0 10px;
+        margin: 20px 20px 0 20px;
     }
 `
 
     const BtnImg=styled.img`
-        flex: 1;
-        width: 100%;
-        height: auto;
-        object-fit: cover;
+        flex: 2;
+        object-fit: contain;
         border-radius: 50%;
 
         :hover{
@@ -112,25 +110,19 @@ const Btn=styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-bottom: 5px;
         font-size: 10px;
         line-height: 10px;
-        width: 100%;
-        height: 100%;
         flex: 1;
         text-transform: uppercase;
+        margin-bottom: 20px;
             
         @media screen and (max-width:420px){
             font-size: 7px;
-            padding-bottom: 2px;
-            line-height: 5px;
         }
 
                 
         @media screen and (max-height:520px){
             font-size: 7px;
-            padding-bottom: 2px;
-            line-height: 5px;
         }
     `
 
@@ -184,6 +176,15 @@ const Btn=styled.div`
         padding-left: 30px;
         font-size: 14px;
         color: white;
+
+        @media screen and (max-width:420px){
+            padding-left: 15px;
+        }
+
+                
+        @media screen and (max-height:520px){
+            padding-left: 15px;
+        }
     `
 
 const ImgContainer=styled.img`
@@ -238,22 +239,29 @@ export default function WorldUI({setRenderPopupState,toggle360, setToggle360, se
 
         <RightMenu> 
 
-            <Btn onClick={openRenderPopup} style={{paddingTop:'20px'}}>
-                <BtnImg style={{color:'white'}} src={ui.icons.render}/>
+            <Btn onClick={openRenderPopup}>
+                <BtnImg style={{color:'white'}} src={ui.icons.right.ar}/>
+                <BtnText>
+                    ar
+                </BtnText>
+            </Btn>
+
+            <Btn onClick={openRenderPopup}>
+                <BtnImg style={{color:'white'}} src={ui.icons.right.render}/>
                 <BtnText>
                     renders
                 </BtnText>
             </Btn>
 
-            <Btn onClick={toggleLevels} style={{paddingTop:'20px'}}>
-                <BtnImg src={ui.icons.levels}/>
+            <Btn onClick={toggleLevels}>
+                <BtnImg src={ui.icons.right.levels}/>
                 <BtnText>
                     levels
                 </BtnText>
             </Btn>
 
-            <Btn onClick={toggling360} ref={refBtn360s} style={{paddingTop:'20px'}}>
-                <BtnImg src={ui.icons.icons360}/>
+            <Btn style={{marginBottom:'10px'}} onClick={toggling360} ref={refBtn360s}>
+                <BtnImg src={ui.icons.right.icons360}/>
                 <BtnText>
                     360s
                 </BtnText>
@@ -272,7 +280,7 @@ export default function WorldUI({setRenderPopupState,toggle360, setToggle360, se
             </BottomText>
 
             <Btn>
-                <BtnImg src={ui.icons.driveway}/>
+                <BtnImg src={ui.icons.bottom.exterior.driveway}/>
                 <BtnText>
                     driveway
                 </BtnText>
@@ -285,7 +293,7 @@ export default function WorldUI({setRenderPopupState,toggle360, setToggle360, se
             </BottomText>
 
             <Btn>
-                <BtnImg src={ui.icons.foyer}/>
+                <BtnImg src={ui.icons.bottom.interior.foyer}/>
                 <BtnText>
                     bedroom
                 </BtnText>

@@ -142,15 +142,15 @@ export default function RendersPopup({renderPopupState,setRenderPopupState}) {
   return (
     <Container>
         <BtnClose onClick={closeRenderPopup}>
-            <BtnImg src={ui.icons.close}/>
+            <BtnImg src={ui.icons.popups.close}/>
         </BtnClose>
 
         <ArrowLeft ref={refArrowLeft}>
-            <BtnImg src={ui.icons.back}/>
+            <BtnImg src={ui.icons.popups.back}/>
         </ArrowLeft>
 
         <ArrowRight ref={refArrowRight}>
-            <BtnImg src={ui.icons.next}/>
+            <BtnImg src={ui.icons.popups.next}/>
         </ArrowRight>
 
         <ImgContainer>

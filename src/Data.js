@@ -50,37 +50,39 @@ const Data={
         menuColor:'#0000007d',
         popupColor:'#00000099',
         icons:{
-            icons360:'/ui/icons/360s.png',
-            back:'/ui/icons/back.png',
-            balcony:'/ui/icons/balcony.png',
-            bathrm:'/ui/icons/bathrm.png',
-            bedrm:'/ui/icons/bedrm.png',
-            close:'/ui/icons/close.png',
-            dinning:'/ui/icons/dinning.png',
-            driveway:'/ui/icons/driveway.png',
-            foyer:'/ui/icons/foyer.png',
-            gym:'/ui/icons/gym.png',
             home:'/ui/icons/home.png',
-            kitchen:'/ui/icons/kitchen.png',
-            levels:'/ui/icons/levels.png',
-            lounge:'/ui/icons/lounge.png',
-            next:'/ui/icons/next.png',
-            pool:'/ui/icons/pool.png',
-            render:'/ui/icons/renders.png',
-            scullery:'/ui/icons/scullery.png',
-            study:'/ui/icons/study.png',
-            toilet:'/ui/icons/toilet.png',
-            walkin_closet:'/ui/icons/walkin_closet.png',
+            popups:{
+                back:'/ui/icons/back.png',
+                next:'/ui/icons/next.png',
+                close:'/ui/icons/close.png',
+            },
+            right:{
+                ar:'/ui/icons/ar.png',
+                levels:'/ui/icons/levels.png',
+                icons360:'/ui/icons/360s.png',
+                render:'/ui/icons/renders.png',
+            },
+            bottom:{
+                exterior:{
+                    balcony:'/ui/icons/balcony.png',
+                    driveway:'/ui/icons/driveway.png',
+                    pool:'/ui/icons/pool.png',
+                },
+                interior:{
+                    bathrm:'/ui/icons/bathrm.png',
+                    bedrm:'/ui/icons/bedrm.png',
+                    dinning:'/ui/icons/dinning.png',
+                    foyer:'/ui/icons/foyer.png',
+                    gym:'/ui/icons/gym.png',
+                    kitchen:'/ui/icons/kitchen.png',
+                    lounge:'/ui/icons/lounge.png',
+                    scullery:'/ui/icons/scullery.png',
+                    study:'/ui/icons/study.png',
+                    toilet:'/ui/icons/toilet.png',
+                    walkin_closet:'/ui/icons/walkin_closet.png',
+                }
+            },
         },
-        top:{
-            
-        },
-        right:{
-            
-        },
-        bottom:{
-            
-        }
     }
 }
 
